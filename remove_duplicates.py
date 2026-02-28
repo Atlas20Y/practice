@@ -7,10 +7,7 @@ def remove_duplicates_old(values: list) -> list:
     return no_duplicates
 
 def remove_duplicates(values: list) -> list:
-    return []
-
-
-
+    return sorted(list(set(values)))#отсортировали список созданный из множества для сохранения упорядоченности
 
 assert remove_duplicates([1,2,2,3]) == [1,2,3]
 assert remove_duplicates(list('aabbcccdd')) == list("abcd")
